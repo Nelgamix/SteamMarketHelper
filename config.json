@@ -1,0 +1,32 @@
+{
+    "steps": {
+        "addPageUrls": true,
+        "addIds": true,
+        "getPrices": true,
+        "recap": true
+    },
+    "filePaths": {
+        "items": "items.json",
+        "prices": "prices.json",
+        "configuration": "config.json"
+    },
+    "filters": {
+        "tags": [
+            "Sticker"
+        ]
+    },
+    "networkStrategy": {
+        "rateLimiter": {
+            "delay": 12500
+        },
+        "rateLimiterPerDomain": {},
+        "delays": {
+            "tooManyRequests": 30000,
+            "networkError": 15000
+        }
+    },
+    "steamOptions": {
+        "language": "french",
+        "currency": 3
+    }
+}
